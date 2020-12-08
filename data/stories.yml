@@ -1,0 +1,38 @@
+version: "2.0"
+
+stories:
+
+  - story: greet
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: thankyou
+    steps:
+      - intent: thankyou
+      - action: utter_noworries
+
+  - story: ask_ability
+    steps:
+      - intent: ask_ability
+      - action: utter_show_ability
+
+  - story: praise
+    steps:
+      - intent: praise
+      - action: utter_happy
+
+  - story: decry
+    steps:
+      - intent: decry
+      - action: utter_sorry
+
+  - story: ask_for_lunch
+    steps:
+      - intent: ask_for_lunch
+      - action: action_recommend
